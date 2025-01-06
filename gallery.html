@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <h1 class="gallery-title">Galeri Proyek Saya</h1>
+            <p class="gallery-description">Beberapa proyek yang telah saya kerjakan, mencakup berbagai bidang seperti pengembangan aplikasi web, pembuatan portofolio pribadi, dan pengembangan aplikasi pembelajaran interaktif. Klik pada gambar untuk melihat detail lebih lanjut.</p>
+            <div class="gallery-grid">
+                <!-- Proyek 1 -->
+                <div class="gallery-item" onclick="openModal('modal1')">
+                    <div class="gallery-overlay">
+                        <img src="Flower Shop.PNG" alt="Proyek 1">
+                        <div class="overlay-text">
+                            <p>Aplikasi E-Commerce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="gallery-item" onclick="openModal('modal2')">
+                    <div class="gallery-overlay">
+                        <img src="Website Portofolio.PNG" alt="Proyek 2">
+                        <div class="overlay-text">
+                            <p>Website Portofolio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div class="gallery-item" onclick="openModal('modal3')">
+                    <div class="gallery-overlay">
+                        <img src="Pembelajaran.png" alt="Proyek 3">
+                        <div class="overlay-text">
+                            <p>Aplikasi Pembelajaran Interaktif</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span>2025 - Vadilah</p>
+    </footer>
+
+    <!-- Modal untuk Proyek -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Aplikasi E-Commerce</h2>
+            <p>Aplikasi e-commerce penjualan bunga secara online adalah platform berbasis web yang memungkinkan 
+                pengguna untuk membeli bunga dengan mudah tanpa harus datang ke toko fisik. Aplikasi ini dirancang untuk 
+                memberikan pengalaman belanja yang cepat, nyaman, dan personal bagi pelanggan, serta mempermudah toko bunga 
+                dalam mengelola pesanan dan inventaris mereka.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Website Portofolio</h2>
+            <p>Website portofolio adalah platform online yang dirancang untuk menampilkan karya, proyek, keterampilan, dan 
+                pengalaman secara profesional. Website ini tidak hanya bertindak sebagai kartu nama digital tetapi juga sebagai 
+                alat untuk membangun personal branding dan menarik peluang kerja atau kolaborasi.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Aplikasi Pembelajaran Interaktif</h2>
+            <p>Aplikasi pembelajaran interaktif adalah platform digital yang dirancang untuk 
+                meningkatkan pengalaman belajar melalui fitur-fitur interaktif, seperti kuis, animasi, simulasi, dan aktivitas 
+                berbasis gamifikasi. Aplikasi ini bertujuan untuk membuat proses pembelajaran lebih menarik, mendalam, dan mudah 
+                diakses oleh berbagai kalangan, terutama anak-anak.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
